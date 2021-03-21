@@ -1,24 +1,11 @@
-# pokedex
+# Pokedex
 
-## Project setup
-```
-npm install
-```
+Projeto de Pokedex desenvolvido em Vue.js
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Mobile:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+![gif-mobile](https://github.com/fernanda-pls/pokedex-vuejs/blob/main/docs/pokedex-mobile.gif)
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Desktop:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![git-desktop](https://github.com/fernanda-pls/pokedex-vuejs/blob/main/docs/pokedex-desktop.gif)
