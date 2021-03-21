@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     handleClick(pokemonId) {
-      fetch(`http://pokeapi.co/api/v2/pokemon/${pokemonId}`)
+      fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
         .then(response => response.json())
         .then(response => {
           this.detalhesPokemon.id = response.id;
