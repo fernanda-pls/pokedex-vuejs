@@ -1,0 +1,20 @@
+@import "@/assets/scss/_fonts_and_colors.scss";
+
+form {
+    margin: 45px 10px 10px 10px;
+  
+    #busca {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+      background: $gray;
+      padding: 10px 0;
+    }
+  
+    #busca:focus,
+    #busca:hover {
+      outline: none;
+      box-shadow: 10px 6px 12px rgba(30, 60, 90, 0.1);
+      padding: 10px;
+    }
+  }

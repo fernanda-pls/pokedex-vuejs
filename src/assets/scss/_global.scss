@@ -1,0 +1,18 @@
+@import "_fonts_and_colors.scss";
+@import "_reset.scss";
+
+body {
+    background: $gray;
+
+    img {
+      max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    span {
+      font-family: $font;
+    }
+  }

@@ -1,0 +1,92 @@
+@import "@/assets/scss/_fonts_and_colors.scss";
+@import "@/assets/scss/_responsiveness.scss";
+
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  
+  .modal {
+    background: white;
+    padding: 1.2rem;
+    box-shadow: 0 0 0 10px white;
+    position: relative;
+    max-width: 50vw;
+    height: 60vh;
+    margin: 100px auto;
+    border-radius: 4px;
+    display: grid;
+    grid-template-areas:
+      "imagemf infos"
+      "imagemb infos";
+    @include mobile {
+      display: block;
+      max-width: 80vw;
+      max-height: 60vh
+    } 
+  
+    h2 {
+      font-size: 2.5rem;
+      margin: 0;
+      margin-bottom: 3.5rem;
+      @include mobile {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      }
+    }
+    #imgf {
+      grid-area: imagemf;
+    }
+    #imgb {
+      grid-area: imagemb;
+    }
+    img {
+      background: $gray;
+      border: none;
+      height: 100%;
+      @include mobile {
+        max-height: 50%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    #imgb {
+      @include mobile {
+      display: none;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      @include mobile {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+    .infos {
+      grid-area: infos;
+      @include mobile{
+        text-align: center;
+      }
+      }
+    button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 4px solid white;
+      top: -30px;
+      right: -30px;
+      position: absolute;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+}
